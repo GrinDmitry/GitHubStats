@@ -24,6 +24,9 @@
 		AA4919A323CDD4B60060C50B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4919A223CDD4B60060C50B /* User.swift */; };
 		AA4919A623CDE4C80060C50B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4919A523CDE4C80060C50B /* NetworkManager.swift */; };
 		AA4919A823CDF22C0060C50B /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4919A723CDF22C0060C50B /* ErrorMessage.swift */; };
+		AA4919AB23CDFCE60060C50B /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4919AA23CDFCE60060C50B /* FollowerCell.swift */; };
+		AA4919AD23CDFD750060C50B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4919AC23CDFD750060C50B /* CustomImageView.swift */; };
+		AA7960E523CE355B0081FC84 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7960E423CE355B0081FC84 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		AA4919A223CDD4B60060C50B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AA4919A523CDE4C80060C50B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AA4919A723CDF22C0060C50B /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		AA4919AA23CDFCE60060C50B /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		AA4919AC23CDFD750060C50B /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		AA7960E423CE355B0081FC84 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		AA49197123CC9BD40060C50B /* GitHubStats */ = {
 			isa = PBXGroup;
 			children = (
+				AA7960E323CE353D0081FC84 /* Utilities */,
 				AA4919A423CDE4B60060C50B /* Manager */,
 				AA49199F23CDD2CB0060C50B /* Model */,
 				AA49199D23CDCDDF0060C50B /* Extensions */,
@@ -101,11 +108,13 @@
 		AA49199C23CDCD990060C50B /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				AA4919A923CDFCB70060C50B /* Cells */,
 				AA49199623CCCE2A0060C50B /* CustomAlert.swift */,
 				AA49198A23CCB80B0060C50B /* CustomButton.swift */,
 				AA49198C23CCBAF70060C50B /* CustomTextField.swift */,
 				AA49199023CCCBF10060C50B /* CustomTitleLabel.swift */,
 				AA49199223CCCD300060C50B /* CustomBodyLabel.swift */,
+				AA4919AC23CDFD750060C50B /* CustomImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -126,7 +135,6 @@
 				AA49197B23CC9BD50060C50B /* Assets.xcassets */,
 				AA49197D23CC9BD50060C50B /* LaunchScreen.storyboard */,
 				AA49198023CC9BD50060C50B /* Info.plist */,
-				AA4919A723CDF22C0060C50B /* ErrorMessage.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -146,6 +154,23 @@
 				AA4919A523CDE4C80060C50B /* NetworkManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		AA4919A923CDFCB70060C50B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA4919AA23CDFCE60060C50B /* FollowerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AA7960E323CE353D0081FC84 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AA4919A723CDF22C0060C50B /* ErrorMessage.swift */,
+				AA7960E423CE355B0081FC84 /* UIHelper.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,10 +246,12 @@
 				AA4919A323CDD4B60060C50B /* User.swift in Sources */,
 				AA49198923CCA6DA0060C50B /* FavoritesListVC.swift in Sources */,
 				AA49198723CCA6900060C50B /* SearchVC.swift in Sources */,
+				AA7960E523CE355B0081FC84 /* UIHelper.swift in Sources */,
 				AA49199323CCCD300060C50B /* CustomBodyLabel.swift in Sources */,
 				AA49199923CCD4DC0060C50B /* UIViewController+Ext.swift in Sources */,
 				AA49198D23CCBAF70060C50B /* CustomTextField.swift in Sources */,
 				AA49197323CC9BD40060C50B /* AppDelegate.swift in Sources */,
+				AA4919AB23CDFCE60060C50B /* FollowerCell.swift in Sources */,
 				AA4919A823CDF22C0060C50B /* ErrorMessage.swift in Sources */,
 				AA49198F23CCC78A0060C50B /* FollowerListVC.swift in Sources */,
 				AA4919A123CDD2DA0060C50B /* Follower.swift in Sources */,
@@ -232,6 +259,7 @@
 				AA4919A623CDE4C80060C50B /* NetworkManager.swift in Sources */,
 				AA49198B23CCB80B0060C50B /* CustomButton.swift in Sources */,
 				AA49199123CCCBF10060C50B /* CustomTitleLabel.swift in Sources */,
+				AA4919AD23CDFD750060C50B /* CustomImageView.swift in Sources */,
 				AA49199723CCCE2A0060C50B /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
