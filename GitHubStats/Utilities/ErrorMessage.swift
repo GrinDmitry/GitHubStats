@@ -13,4 +13,6 @@ enum ErrorMessage: String, Error {
     case unableToComplete = "Unable to complete your request. Please check your connection."
     case invalidResponse  = "Invalid response from the server. Please try again."
     case invalidData      = "Data recieved from the server is invalid, please try again"
+    case unableToFavorite = "There was an error favoriting this user. Please try again"
+    case alreadyInFavorites = "You already favorite this user. You must like them"
 }
